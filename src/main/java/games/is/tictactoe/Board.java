@@ -1,21 +1,21 @@
 package is.game.tictactoe;
 
 public class Board{
-	private byte movesLeft;
-	private byte[][] board;
+	private int movesLeft;
+	private int[][] board;
 
 	//Class constructor
 	public Board(){
 		this.setMovesLeft(9);
-		this.board = new byte[3][3];
+		this.board = new int[3][3];
 		this.resetBoard();
 	}
 
-	protected byte getMovesLeft(){
+	protected int getMovesLeft(){
 		return this.movesLeft;
 	}
 
-	protected byte setMovesLeft(byte moves){
+	protected void setMovesLeft(int moves){
 		this.movesLeft = moves;
 	}
 
@@ -25,12 +25,12 @@ public class Board{
 	}
 
 	//Attempts to make a move on board based on input
-	protected void makeMove(byte cell){
+	protected void makeMove(int cell){
 
 	}
 
 	//Check if cell is available
-	protected boolean cellAvailable(byte cell){
+	protected boolean cellAvailable(int cell){
 		return false;
 	}
 

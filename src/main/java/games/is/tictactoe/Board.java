@@ -15,7 +15,7 @@ public class Board{
 		return this.movesLeft;
 	}
 
-	protected void setMovesLeft(byte moves){
+	protected byte setMovesLeft(byte moves){
 		this.movesLeft = moves;
 	}
 
